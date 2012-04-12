@@ -7,35 +7,42 @@
 <script src="jquery-mobile/jquery-1.5.min.js" type="text/javascript"></script>
 <script src="jquery-mobile/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
 <script type="text/javascript" charset="utf-8" src="cordova-1.6.0.js"></script>
-
+<script type="text/javascript" charset="utf-8" src="phonegap-camera.js"></script>
 </head> 
 <body> 
 
 <div data-role="page" id="page">
 	<div data-role="header">
-		<h1>Page One</h1>
+		<h1>PhoneGap / JQ Test</h1>
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview">
-			<li><a href="#page2">Page Two</a></li>
+			<li><a href="#page2">Camera Test</a></li>
             <li><a href="#page3">Page Three</a></li>
 			<li><a href="#page4">Page Four</a></li>
 		</ul>		
 	</div>
 	<div data-role="footer">
-		<h4>Page Footer</h4>
+		<h4>Programming is fun!</h4>
 	</div>
 </div>
 
 <div data-role="page" id="page2">
 	<div data-role="header">
-		<h1>Page Two</h1>
+		<h1>Camera Test</h1>
 	</div>
 	<div data-role="content">	
-		Content		
+
+<button onclick="capturePhoto();">Capture Photo</button> <br>
+<button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
+<button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
+<button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
+<img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+<img style="display:none;" id="largeImage" src="" />
+	
 	</div>
 	<div data-role="footer">
-		<h4>Page Footer</h4>
+		<h4>I can haz picture?</h4>
 	</div>
 </div>
 
