@@ -9,6 +9,9 @@
 <script src="jquery-mobile/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
 <script type="text/javascript" charset="utf-8" src="phonegap-cam.js"></script>
 <script type="text/javascript" charset="utf-8" src="phonegap-geo.js"></script>
+<script type="text/javascript" charset="utf-8" src="phonegap-dev.js"></script>
+<script type="text/javascript" charset="utf-8" src="phonegap-con.js"></script>
+<script type="text/javascript" charset="utf-8" src="phonegap-med.js"></script>
 </head> 
 <body> 
 
@@ -20,7 +23,11 @@
 		<ul data-role="listview">
 			<li><a href="#page2">Camera Test</a></li>
             <li><a href="#page3">Geo Test</a></li>
-			<li><a href="#page4">Page Four</a></li>
+			<li><a href="#page4">Device Info</a></li>
+			<li><a href="#page5">Network Info</a></li>
+			<li><a href="#page6">Media Test</a></li>
+			<li><a href="#page7">???</a></li>
+			<li><a href="#page8">???</a></li>
 		</ul>		
 	</div>
 	<div data-role="footer">
@@ -33,7 +40,6 @@
 		<h1>Camera Test</h1>
 	</div>
 	<div data-role="content">	
-<a href="justcam.html">Just the Camera</a> <br>
 <button onclick="capturePhoto();">Capture Photo</button> <br>
 <button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
 <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
@@ -61,7 +67,59 @@
 
 <div data-role="page" id="page4">
 	<div data-role="header">
-		<h1>Page Four</h1>
+		<h1>Device Info</h1>
+	</div>
+	<div data-role="content">	
+<p id="deviceProperties">Loading device properties...</p>
+	</div>
+	<div data-role="footer">
+		<h4>I still know what you did last summer...</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page5">
+	<div data-role="header">
+		<h1>Network Connection</h1>
+	</div>
+	<div data-role="content">
+<button onclick="checkConnection();">Get Network Info</button> <br>
+<p id="netinfo">Network Info</p>
+	</div>
+	<div data-role="footer">
+		<h4>411 on your GSM</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page6">
+	<div data-role="header">
+		<h1>Media Test</h1>
+	</div>
+	<div data-role="content">	
+<button onclick="playAudio('http://blog.rickbreslin.com/extras/doink-doink.mp3');">Doink Doink</button> <br>
+<button onclick="playAudio('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3');">Play Song</button> <br>
+<button onclick="pauseAudio();">Pause Audio</button> <br>
+<button onclick="stopAudio();">Stop Audio</button> <br>
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page7">
+	<div data-role="header">
+		<h1>Page Six</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page8">
+	<div data-role="header">
+		<h1>Page Six</h1>
 	</div>
 	<div data-role="content">	
 		Content		
