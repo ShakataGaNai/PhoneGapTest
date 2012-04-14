@@ -1,0 +1,31 @@
+== About ==
+This application is nothing more than a massive "Hello World" for the PhoneGap
+framework ( http://phonegap.com/ ).  I took an example PhoneGap app from 
+Dreamweaver CS 5.5 to use as the UI base.  Each screen is one item from the 
+API documentation ( http://docs.phonegap.com/en/1.6.0/index.html ).
+
+== License ==
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+=== jQuery / jQuery mobile ===
+Copyright 2011, John Resig
+Dual licensed under the MIT or GPL Version 2 licenses.
+http://jquery.org/license
+
+=== Codova API Docs ===
+No license stated. Assumed to be public domain. See:
+
+http://docs.phonegap.com/en/1.6.0/index.html
+
+=== Everything Else ===
+I, Jon Davis, claim no copyright and release my code into the public domain
+using the CC0 license. For addition information please see the link below.
+
+http://creativecommons.org/publicdomain/zero/1.0/
+
